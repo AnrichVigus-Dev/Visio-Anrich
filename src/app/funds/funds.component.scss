@@ -1,0 +1,45 @@
+/* ------------------ Funds Button Container ------------------ */
+
+
+.funds-container{
+    --auto-grid-min-size: 13rem;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    column-gap: 24px;
+    margin-bottom: 166px;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    padding-bottom:100px
+  }
+  
+        @media only screen and (max-width: 1500px) {
+            .funds-container{
+                --auto-grid-min-size: 13rem;
+                width: 95%;
+                margin: auto;
+                display: grid;
+                grid-template-columns: auto auto auto auto auto auto;
+                column-gap: 24px;
+                margin-bottom: 166px;
+                grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+            }
+        }
+  
+  
+  .funds-container button{
+    background-color: #244AC2;
+    border: 1px solid #061c2c18;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 14px 14px 14px 14px;
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .funds-container button img{
+  width: 12px;
+  float: right;
+  }

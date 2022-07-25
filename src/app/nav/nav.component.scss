@@ -1,0 +1,35 @@
+/* ------------------ Navigation menu ------------------ */
+
+nav{
+    width: 100%;
+    max-width: 1620px;
+    height: 175px;
+    margin: auto;
+  }
+  
+  nav .logo{
+    margin-left:60px;
+    padding-top: 60px;
+  }
+  
+  nav .menu {
+   float: right;
+   margin-right: 60px;
+   padding-top: 75px;
+   width: auto;
+  }
+  
+        /* Logo and menu - Mobile */
+        @media only screen and (max-width: 600px) {
+          nav .logo{
+            width: 170px;
+            padding-top: 65px;
+            margin-left:40px;
+          }
+          
+          nav .menu {
+           float: right;
+           margin-right: 45px;
+           padding-top: 75px;
+          }
+        }
