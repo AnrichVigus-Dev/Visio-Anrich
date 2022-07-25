@@ -1,0 +1,203 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.slider-container{
+    width: 100%;
+    height: 700px;
+}
+
+.box1-content{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+.img-box{
+    width: 100%;
+    height: 700px;
+}
+
+.img1{
+    background-image: url('/assets/img/slider-img-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img2{
+    background-image: url('/assets/img/slider-img-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img3{
+    background-image: url('/assets/img/slider-img-3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img4{
+    background-image: url('/assets/img/slider-img-4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.heading-box{
+    background-color: #244AC2;
+    height: 117px;
+    width: 750px;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    transform: translate(0%, -45%);
+    color: #fff;
+    display: grid;
+    align-content: center;
+    text-align: left;
+    padding-left:210px
+}
+
+@media only screen and (max-width: 1124px) {
+    .heading-box{
+        background-color: #244AC2;
+        height: 117px;
+        width: 90% ;
+        position: absolute;
+        left: 0;
+        top: 45%;
+        transform: translate(0%, -45%);
+        color: #fff;
+        display: grid;
+        align-content: center;
+        text-align: left;
+        padding-left:10px
+    }
+  }
+
+
+.heading-box h1{
+    font-weight: 600;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+
+@media only screen and (max-width: 1124px) {
+    .heading-box h1{
+       padding-left: 30px;
+    }
+  }
+
+
+// Buttons
+
+.box-outer{
+    position: relative;
+    width: 100%;
+    max-width: 1620px;
+    margin: auto;
+    height: 100px;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    width: 100px;
+    position:absolute;
+    z-index: 1;
+    right: 60px;
+    margin-top: -100px;
+    }
+
+    @media only screen and (max-width: 1124px) {
+        .boxes {
+            left: 60px;
+            }
+      }
+
+.box {
+     height: 21px;
+     background-image: url('/assets/img/radio-btn.png');
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;
+     cursor: pointer;
+    }
+
+
+// Arrow
+
+.arrow-outer{
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+    top: 45%;
+    transform: translate(0%, -40%);
+}
+
+@media only screen and (max-width: 1124px) {
+    .arrow-outer{
+        position: absolute;
+        z-index: 9;
+        width: 100%;
+        top: 70%;
+        transform: translate(0%, -40%);
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .arrow-outer{
+        position: absolute;
+        z-index: 9;
+        width: 100%;
+        top: 73%;
+    }
+}
+
+.arrow{
+    text-align: right;
+    cursor: pointer;
+    width: 100%;
+    max-width: 1620px;
+    margin: auto;
+}
+
+.arrow img{
+    margin-right: 20px;
+}
+
+    @media only screen and (max-width: 1124px) {
+        .arrow img{
+            width: 100px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .arrow img{
+            width: 70px;
+        }
+    }
+
+// Black box
+
+
+.black-box{
+    background-color: #000000;
+    height: 117px;
+    width: 750px;
+    position: absolute;
+    right: 0;
+    top: 45%;
+    transform: translate(0%, -45%);
+    color: #fff;
+    display: inline-block;
+    text-align: left;
+    padding-left:210px;
+    z-index: -1;
+}

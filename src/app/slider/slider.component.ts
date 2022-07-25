@@ -9,6 +9,7 @@ declare var name: any;
 })
 export class SliderComponent implements OnInit {
 
+
   constructor() {
 
    }

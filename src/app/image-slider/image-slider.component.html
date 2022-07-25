@@ -1,0 +1,109 @@
+
+
+    
+<div class="slider-container">
+
+    <!-- Slide 1 -->
+    <div *ngIf="showTab == 1" class="box1-content">
+
+        <div class="heading-box">
+            <h1>Look beyond the ordinary</h1>
+        </div>
+
+        <div class="img-box img1"></div>
+
+        <div class="arrow-outer">
+            <div class="arrow" (click)="tabToggle(2)">
+                <img src="/assets/img/next-arrow.png" alt="">
+            </div>
+        </div> 
+   
+            <div class="black-box"></div>
+
+            <div class="box-outer">
+                <div class="boxes">
+                    <div class="box" (click)="tabToggle(1)" style="opacity: 0.5;"></div>
+                    <div class="box" (click)="tabToggle(2)"></div>
+                    <div class="box" (click)="tabToggle(3)"></div>
+                    <div class="box" (click)="tabToggle(4)"></div>
+                </div>
+            </div>
+            
+    </div>
+
+    <!-- Slide 2 -->
+    <div *ngIf="showTab == 2" class="box1-content">
+        <div class="heading-box">
+            <h1>We aspire to inspire</h1>
+        </div>
+        <div class="img-box img2"></div>
+
+        <div class="arrow-outer">
+            <div class="arrow" (click)="tabToggle(3)">
+                <img src="/assets/img/next-arrow.png" alt="">
+            </div>
+        </div> 
+
+            <div class="black-box"></div>   
+            <div class="box-outer">
+
+                <div class="boxes">
+                    <div class="box" (click)="tabToggle(1)"></div>
+                    <div class="box" (click)="tabToggle(2)" style="opacity: 0.5;"></div>
+                    <div class="box" (click)="tabToggle(3)"></div>
+                    <div class="box" (click)="tabToggle(4)"></div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Slide 3 -->
+        <div *ngIf="showTab == 3" class="box1-content">
+            <div class="heading-box">
+                <h1>We can and we will</h1>
+            </div>
+            <div class="img-box img3"> </div>
+            <div class="arrow-outer">
+                <div class="arrow" (click)="tabToggle(4)">
+                    <img src="/assets/img/next-arrow.png" alt="">
+                </div>
+            </div> 
+           
+                <div class="black-box"></div>
+
+                <div class="box-outer">
+                    <div class="boxes">
+                        <div class="box" (click)="tabToggle(1)"></div>
+                        <div class="box" (click)="tabToggle(2)"></div>
+                        <div class="box" (click)="tabToggle(3)" style="opacity: 0.5;"></div>
+                        <div class="box" (click)="tabToggle(4)"></div>
+                    </div>
+                </div>
+        </div>
+
+    <!-- Slide 4 -->
+     <div *ngIf="showTab == 4" class="box1-content">
+            <div class="heading-box">
+                <h1>We leave no stone unturned</h1>
+            </div>
+            <div class="img-box img4"></div>
+            <div class="arrow-outer">
+                <div class="arrow" (click)="tabToggle(1)">
+                    <img src="/assets/img/next-arrow.png" alt="">
+                </div>
+            </div> 
+                <div class="black-box"></div>
+
+                <div class="box-outer">
+                    <div class="boxes">
+                        <div class="box" (click)="tabToggle(1)"></div>
+                        <div class="box" (click)="tabToggle(2)"></div>
+                        <div class="box" (click)="tabToggle(3)"></div>
+                        <div class="box" (click)="tabToggle(4)" style="opacity: 0.5;"></div>
+                    </div>
+                </div>
+        </div>
+
+</div>
+
+
+

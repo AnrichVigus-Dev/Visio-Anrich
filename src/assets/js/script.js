@@ -1,5 +1,3 @@
-
-
 const prev = document.querySelector('.slider__arrow--prev');
 const next = document.querySelector('.slider__arrow--next');
 const slides = document.getElementsByClassName('slider__image');
